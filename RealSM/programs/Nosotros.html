@@ -5,6 +5,8 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="../resources/materialize/css/materialize.min.css"  media="screen,projection"/>
+      <!--Agregando CSS-->
+      <link type="text/css" rel="stylesheet" href="../styles/estilo.css"/>
       <!--Let browser know website is optimized for mobile-->
       <meta charset="UTF-8"/>
       <title>rsdm | Sobre Nosostros</title>
@@ -17,25 +19,30 @@
             </div>
           </div>
         </div>
+      <!--Imagen inicial superior-->
         <img src="../resources/images/DSC02330.jpg" class="responsive-img">
       <!--Texto de historia y funcionamiento-->
         <div class="row">
           <div class="col s8 push-s2">
-            <p class="font_8" style="text-align:center;"><span style="font-size:38px;">Historia y funcionamiento</span></p>
+            <p  style="text-align:center;"><span style="font-size:38px;">Historia y funcionamiento</span></p>
             <h6 class="font_6" style="text-align:center;">Real Seminario de Minería</h6>
-            <p class="font_8">El Real Seminario de Minería de la Nueva España fue fundado el 1 de enero de 1792, con sede en la calle de Guatemala No. 90, con el propósito de enseñar la técnica de minas y mejorar la producción de la minería en la Nueva España; las clases iniciaron en marzo de ese mismo año con 25 alumnos. Fue hasta el año 1813 cuando comenzaron las labores en lo que ahora es El Palacio de Minería, ubicado en la calle Tacuba del Centro Histórico de la Ciudad de México, edificada por el arquitecto de origen español Manuel Tolsá.</p><br/>
-            <p class="font_8">Su belleza de estilo neoclásico lo convirtió en un ícono de la arquitectura en todo el continente americano.</p>
-            <p class="font_8">Fausto Elhúyar y de Zúbice, presidente y director general del Real Tribunal de Minería de Nueva España, es quien recibe gran parte del mérito de la fundación de esta escuela. Entre algunos de los catedráticos del recinto destacan Don Andrés Manuel del Río, Ludiwg Linder y Alexander von Humboldt.</p>
+            <p >El Real Seminario de Minería de la Nueva España fue fundado el 1 de enero de 1792, con sede en la calle de Guatemala No. 90, con el propósito de enseñar la técnica de minas y mejorar la producción de la minería en la Nueva España; las clases iniciaron en marzo de ese mismo año con 25 alumnos. Fue hasta el año 1813 cuando comenzaron las labores en lo que ahora es El Palacio de Minería, ubicado en la calle Tacuba del Centro Histórico de la Ciudad de México, edificada por el arquitecto de origen español Manuel Tolsá.</p><br/>
+            <p >Su belleza de estilo neoclásico lo convirtió en un ícono de la arquitectura en todo el continente americano.</p>
+            <p >Fausto Elhúyar y de Zúbice, presidente y director general del Real Tribunal de Minería de Nueva España, es quien recibe gran parte del mérito de la fundación de esta escuela. Entre algunos de los catedráticos del recinto destacan Don Andrés Manuel del Río, Ludiwg Linder y Alexander von Humboldt.</p>
           </div>
        </div>
       </div>
+      <!--Imagen central con parallax-->
+      <div class="parallax-container" style="height: 650px;">
+        <div class="parallax"><img src="../resources/images/DSC02355.jpg" class="responsive-img"></div>
+      </div><br/>
        <!--Texto de historia moderna-->
         <div class="row">
           <div class="col s12">
-            <p class="font_8" style="text-align:center;"><span style="font-size:38px;">HISTORIA MODERNA</span></p>
-              <h6 class="font_6" style="text-align:center;">Seminario Real de Minería</h6>
+            <p style="text-align:center;"><span style="font-size:38px;">HISTORIA MODERNA</span></p>
+              <h6 style="text-align:center;">Seminario Real de Minería</h6>
               <div class="col s8 push-s2">
-                <p class="font_8" style="text-align:center;">
+                <p style="text-align:center;">
                   Al día de hoy el Real Seminario de Minería se encuentra bajo la administración de la Sociedad de Ex alumnos de la Facultad de Ingeniería de la UNAM, quienes en diversos esfuerzos de remodelación han logrado dotar al inmueble de la capacidad de recibir diversos eventos y  a su vez la capacidad de ser casa de una de las Facultades de idiomas más importantes del país, el ENALLT.
                 </p>
               </div>
@@ -83,5 +90,10 @@
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="../resources/materialize/js/materialize.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+        $('.parallax').parallax();
+        });
+      </script>   
     </body>
   </html>
