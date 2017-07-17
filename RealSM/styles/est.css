@@ -1,0 +1,96 @@
+h6
+{
+    font-family: "Brush Script MT";
+    font-size: 28px;
+}
+p
+{
+	font-family: "DokChampa";
+}
+a:not(.carousel-item) > img
+{ 
+	width: 30px;
+	height: 30px;
+}
+button
+{
+	margin-top:2em
+}
+a:hover
+{
+    color:red;
+}
+.mob:hover
+{
+	background-color: red !important;
+}
+li>a:not(.icono)
+{
+	padding: 0 2em !important;
+}
+#actualp
+{
+	color:orange;
+}
+#divarea
+{
+	height: 10em;
+}
+#navba , #navbai
+{
+	top: -2.5em;
+}
+#textarea1
+{
+	margin-top:1em;
+}
+#peventos
+{
+	height: 530px;
+}
+#pnosotros
+{
+	height: 600px;
+}
+.icono
+{
+	margin-top: 1ex;
+	width: 30px;
+	height: 30px;
+}
+.carousel
+{
+	margin: auto; 
+	margin-bottom: 1ex;
+}
+.card-panel
+{
+	position: relative; top: -9px;
+}
+.titulos
+{
+	text-align:center;
+}
+.contenidos
+{
+	text-align:justify;
+}
+.subti
+{
+	font-family: "Arial Narrow";
+	font-style: "black";
+	font-weight: bold;
+	font-size: 38px;
+}
+.inisub
+{
+	font-family: "Arial Narrow";
+	font-style: "black";
+	font-weight: bold;
+	font-size: 34px;
+	text-align: center;
+}
+.inisub > span
+{
+	letter-spacing:0.05em;
+}
