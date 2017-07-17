@@ -1,5 +1,5 @@
 <?php
-  //falta validar y hacer los mensajes de error
+  //falta hacer los mensajes de error
 	if(mysqli_connect('localhost','root','','prueba')){
 		$con=mysqli_connect('localhost','root','','prueba');
 		$_POST['nom']=mysqli_real_escape_string($con,$_POST['nom']);
@@ -9,7 +9,6 @@
 		$query="insert into cotizaciones values('".$_POST['nom']."','".$_POST['email']."','".$_POST['tema']."','".$_POST['msj']."');";
 		$res=mysqli_query($con,$query);
 	}
-	
 	echo "
 	<html>
 	<head>

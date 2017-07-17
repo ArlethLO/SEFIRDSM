@@ -7,6 +7,11 @@ p
 {
 	font-family: "DokChampa";
 }
+a:not(.carousel-item) > img
+{ 
+	width: 30px;
+	height: 30px;
+}
 button
 {
 	margin-top:2em
@@ -15,7 +20,11 @@ a:hover
 {
     color:red;
 }
-li a 
+.mob:hover
+{
+	background-color: red !important;
+}
+li>a:not(.icono)
 {
 	padding: 0 2em !important;
 }
@@ -43,9 +52,16 @@ li a
 {
 	height: 600px;
 }
+.icono
+{
+	margin-top: 1ex;
+	width: 30px;
+	height: 30px;
+}
 .carousel
 {
-	margin: auto; margin-bottom: 1ex;
+	margin: auto; 
+	margin-bottom: 1ex;
 }
 .card-panel
 {
