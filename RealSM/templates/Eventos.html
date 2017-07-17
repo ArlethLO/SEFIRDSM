@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+  <html lang="es">
+    <head> 
+       <meta charset="UTF-8"/>
+       <title>EVENTOS</title>
+      <!--Import Google Icon Font-->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+      <!--Import materialize.css-->
+       <link type="text/css" rel="stylesheet" href="../resources/materialize/css/materialize.min.css"  media="screen,projection"/>
+       <!--Agregando CSS-->
+       <link type="text/css" rel="stylesheet" href="../styles/est.css"/>
+    </head>
+    <body>
+    <!--Recuadro superior de dirreción-->
+        <header>
+          <div  class="col s12">
+            <div class="card-panel black">
+              <div class="center-align col s12"><span class="white-text">República de Guatemala 90, Col. Centro, C.P. 06000</span></div>
+            </div>
+          </div>
+        </header>
+    <!--navbar-->   
+      <div id="navba" class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper black">
+            <a class="brand-logo center"><i class="material-icons">cloud</i></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <li><a href="Inicio.html" >Inicio</a></li>
+                <li><a href="Galería.html">Galeria</a></li>
+                <li><a id="actualp" href="#top">Eventos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <ul class="side-nav" id="mobile-demo">
+                <li><a href="Inicio.html" >Inicio</a></li>
+                <li><a href="Galería.html">Galeria</a></li>
+                <li><a id="actualp" href="#top">Eventos</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+      </ul>
+    <!--fin de la navbar--> 
+    <!--imagen de eventos-->
+        <div>
+          <img src="../resources/images/DSC02469.jpg" class="responsive-img">
+        </div>
+    <!--Texto de nuestros eventos-->
+        <p class="titulos"><span  class="subti" style="font-size:38px;">NUESTROS EVENTOS</span></p>
+        <h6  class="titulos">¡Para la mejor fiesta!</h6><br>
+        <div class="row">
+          <div class="col s8 push-s2">
+            <p class="titulo" style="line-height:1.6em;"><span style="letter-spacing:0.01em;">Contamos con diversos espacios, perfectos para cualquier tipo de evento, desde el patio principal capaz de albergar una comida de hasta 250 personas, hasta pequeños salones para cátedras o reuniones privadas.</span>
+            </p>
+          </div>
+        </div>
+        <div id="peventos" class="parallax-container">
+             <div class="parallax"><img src="../resources/images/colagi.png"></div>
+        </div>
+    <!--Footer de la pagina-->
+        <footer class="page-footer black">
+          <div class="container">
+            <div class="row">
+              <div class="col s6 l2">
+                <h5 class="white-text">DIRECCIÓN</h5>
+                <span>República de Guatemala 90, Col Centro, C.P. 06000</span>
+              </div>
+              <div class="col s6 l4">
+                  <h5 class="white-text">CONTACTO</h5>
+                  <a class="white-text" href="mailto:atencion@sefi.org.mx">atencion@sefi.org.mx</a>
+                  <a class="white-text" href="mailto:fundraising@sefi.org.mx">fundraising@sefi.org.mx</a><br/><br/>
+                  <a class="white-text" href="tel:+52">tel. 5512 3353</a><br/>
+                  <a class="white-text" href="tel:+52">cel. 044 55 2305 8642</a>
+              </div>
+              <div class="col s12 l6" ><a name="coti"></a>
+                <h5 class="white-text">SOLICITA UNA COTIZACIÓN</h5>
+                <span>(favor de agregar fecha del evento)</span>
+                <div>
+                  <form action="../programs/php/rsdm.php" method="post">
+                      <div class="col s5 l5" >
+                          <div class="input-field">
+                              <input id="nome" name="nom" type="text" class="validate" maxlength="70" data-length="70" required>
+                              <label for="nome">Nombre</label>
+                          </div>
+                           <div class="input-field">
+                              <input id="emai" name="email" type="email" class="validate" maxlength="70" data-length="70" required>
+                              <label for="emai">Email</label>
+                          </div>
+                           <div class="input-field">
+                              <input id="tema" name="tema" type="text" class="validate" maxlength="70" data-length="70" required>
+                              <label for="tema">Tema</label>
+                          </div>
+                      </div>
+                      <div id="divarea" class="input-field col s5 l6">
+                             <textarea id="textarea1" name="msj" class="materialize-textarea validate" maxlength="120" data-length="120" required></textarea>
+                             <label for="textarea1">Mensaje</label>
+                      </div>
+                      <button class="btn waves-effect waves-light" type="submit" >Enviar</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright black-light">
+            <div class="container">RSDM All rights reserved. </div>
+          </div>
+        </footer>
+    <!--Fin del Footer-->
+    <!--Scripts-->
+          <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+          <script type="text/javascript" src="../resources/materialize/js/materialize.min.js"></script>
+          <script type="text/javascript" src="../programs/js/navbar.js"></script>
+          <script type="text/javascript" src="../programs/js/parallax.js"></script>
+     </body>
+  </html>
